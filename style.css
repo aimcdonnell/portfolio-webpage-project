@@ -1,4 +1,5 @@
 /*This document needs to be in the same folder as the index.html to work*/
+/*Added font styles from Google Fonts*/
 @font-face {
     font-family: 'Barlow Semi Condensed';
     font-style: normal;
@@ -82,11 +83,39 @@
 * {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    list-style-type: none;
+}
+nav {
+  font-weight: 700;
+}
+/*Made the links on one line and on the right-hand side of the page*/
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+/*Added spacing between the elements*/
+nav li {
+  margin: 0.5rem;
+}
+/*Changing the style of links*/
+/*When you hover over the elements, they have an underline but do not change color once you've clicked on them*/
+a:link {
+  text-decoration: none;
 }
 
-h1 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+a:hover {
+  text-decoration: underline;
 }
 
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/*Made the image size 50% of the container but it shrinks and grows depending on the size of the page*/
+.website-creator-image img{
+  width: 50%;
+  height: auto;
+}
 

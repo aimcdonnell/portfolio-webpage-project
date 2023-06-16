@@ -12,9 +12,10 @@
 	<script src="index.js"></script>
 
     <!--Make the nav elements be side by side-->
+    <!--Added role="presentation so that a screen reader would skip to the relevant <li> elements"-->
     <nav>
-        <h1>Antonia</h1>
-        <ul>
+        
+        <ul role="presentation">
             <li><a href="/index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -22,41 +23,42 @@
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <!--Make this inline-block along with the About Me section-->
+    <!--Make the image not shrink too much so that you can't see it-->
+    <!--Made this inline-block along with the About Me section-->
     <section class="website-creator-image">
-        <img src="/images/Headshot_AntoniaMcDonnell.jpg" alt="Photo of website creator, Antonia McDonnell">
+        <img src="/images/Headshot_AntoniaMcDonnell.jpg" alt="Photo of website creator Antonia McDonnell">
+        <section id="about">
+            <h3>About Me</h3>
+            <p>Hi! I'm Antonia and I am a Full-Stack Developer. I learnt how to code while studying a Coding Bootcamp with IT Career Switch. I really enjoyed the course, especially as someone who has a background in languages. I speak French, Spanish, Italian and a little bit of Swedish.<br> To me, coding is like learning a new way of communicating, except with computers rather than people! I also like the problem-solving aspect of coding. There is nothing more satisfying than resolving a bug or learning a new trick. Thanks for visiting my page and in case you would like to get in touch, head over to the Contact page.</p>
+        </section>
     </section>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>Hi! I'm Antonia and I am a Full-Stack Developer. I learnt how to code while studying a Coding Bootcamp with IT Career Switch. I really enjoyed the course, especially as someone who has a background in languages. To me, it is like learning a new way of communicating, except with computers rather than people! I also like the problem-solving aspect of coding. There is nothing more satisfying than resolving a bug or learning a new trick. Thanks for visiting my page and in case you would like to get in touch, head over to the Contact page.</p>
-    </section>
-    
-    <section id="projects">
-        <!--Work out how to link to other files in folders to showcase projects-->
+    <!--TO DO: Make it possible to click on the elements below to show and hide projects-->
+    <section id="projects" role="presentation">
         <h3>Projects</h3>
+        <li>Motivational Quotations</li>
+        <li>Paws 'R' Us</li>
+        <li>Trampolining Club</li>
     </section>
 
-    <section id="skills">
-        <!--Add images of software you have learnt here-->
+    <section id="skills" role="presentation">
         <h3>Skills</h3>
-        <ul>
+        <ul id="skills" role="presentation">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Git</li>
             <li>GitHub</li>
         </ul>
-        <p>There's more to come!</p>
+        <p>And there's still more software to learn!</p>
     </section>
 
-    <section>
+    <section class="contact">
         <h3>Contact</h3>
         <p>Click <a href="/contact.html" target="_blank">here</a> to be taken to the Contact form.</p>
     </section>
   </body>
   <footer>
-    
+    <p>© 2023 - AIM Web Development - All rights reserved.</p>
   </footer>
 </html>

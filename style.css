@@ -87,13 +87,26 @@
     text-align: center;
     list-style-type: none;
 }
+/*Amend line spacing in between elements below*/
+
+/*Added z-index to make the nav bar appear over the main content of the body*/
 nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
   font-weight: 700;
+  float: left;
+  width: 100%;
+  margin: -2rem;
+  z-index: 1;
+  border-bottom: 0.05rem solid rgb(0, 0, 0);
 }
+
 /*Made the links on one line and on the right-hand side of the page*/
+/*Make a nav element stretch across the page*/
 nav ul {
   display: flex;
   justify-content: right;
+  align-items: center;
 }
 /*Added spacing between the elements*/
 nav li {
@@ -113,9 +126,60 @@ a:visited {
   color: rgb(0, 0, 0);
 }
 
+.website-creator-image {
+  display: flex;
+  position: relative;
+  top: 1rem;
+}
 /*Made the image size 50% of the container but it shrinks and grows depending on the size of the page*/
 .website-creator-image img{
   width: 50%;
   height: auto;
+  border-radius: 1rem;
 }
 
+#about {
+  padding: 1rem;
+  background-color: rgb(245, 243, 243);
+  border-radius: 1rem;
+}
+
+#projects {
+  position: relative;
+  top: 1rem;
+  
+}
+
+/*Made the skills appear next to each other rather than as a list and added space in between them*/
+#skills ul {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#skills li {
+  margin: 0.5rem;
+}
+
+.contact {
+  position: relative;
+  top: 3rem;
+}
+
+.contact img {
+  width: 50%;
+  height: auto;
+}
+
+footer {
+  position: relative;
+  top: 4rem;
+}
+
+form {
+  background-color:rgb(245, 243, 243);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}

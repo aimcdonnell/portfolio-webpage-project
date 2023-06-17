@@ -179,7 +179,12 @@ footer {
 
 form {
   background-color:rgb(245, 243, 243);
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 1rem;
+}
+
+/*Placed the contact us form in a table so that it's easier to line up*/
+table {
+  margin: 0 auto;
 }

@@ -26,13 +26,46 @@
       <h2>Get in Touch</h2>
       <img src="images/laptop contact-us.jpg" alt="A laptop with a notepad and mobile phone">
       <p>If you have any general questions or would like to get in touch, please fill in the form below:</p>
-        <form action="/contact.html" method="POST">
+        <form action="thankyou.html" method="POST" defer>
           <h1>Contact Us</h1>
-          <!--Separate into sections-->
-          <label for="contact">Please enter your full name:</label>
-          <input type="text" name="name" id="contact" placeholder="Jane Doe">
+          <table>
+            <tr>
+              <td><label for="full-name">Please enter your full name:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="name" id="full-name" placeholder="Jane Doe" required size="20"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Please enter your email address:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="email" id="email" placeholder="email@gmail.com" required size="20"></td>
+            </tr>
+            <tr>
+              <td><label for="purpose">Reason for reaching out:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" list="reason" id="purpose" name="purpose" required size="20"></td>
+            </tr>
+            <tr>
+              <datalist id="reason">
+                <option value="collaboration"></option>
+                <option value="project"></option>
+                <option value="other"></option>
+              </datalist>
+            </tr>
+            <tr>
+              <td><label for="additional-info">Write your message here:</label></td>
+            </tr>
+            <tr>
+              <td><textarea id="additional-info" name="additional-info" rows="5" cols="50" minlength="10" maxlength="500" placeholder="Please write your message in here">
+              </textarea></td>
+            </tr> 
+            <tr>
+              <td><input type="submit" value="Submit" size="20"></td>
+            </tr>      
+          </table>
         </form>
-
     </section>
     
   </body>

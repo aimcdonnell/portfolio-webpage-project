@@ -87,7 +87,7 @@
     text-align: center;
     list-style-type: none;
 }
-/*Amend line spacing in between elements below*/
+
 
 /*Added z-index to make the nav bar appear over the main content of the body*/
 nav {
@@ -126,10 +126,13 @@ a:visited {
   color: rgb(0, 0, 0);
 }
 
+.main-content {
+  position: relative;
+  top: 3rem;
+}
+
 .website-creator-image {
   display: flex;
-  position: relative;
-  top: 1rem;
 }
 /*Made the image size 50% of the container but it shrinks and grows depending on the size of the page*/
 .website-creator-image img{
@@ -144,16 +147,17 @@ a:visited {
   border-radius: 1rem;
 }
 
-#projects {
-  position: relative;
-  top: 1rem;
-  
+#projects li {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+#projects table {
+  text-align: center;
+  list-style-position: inside;
 }
 
 /*Made the skills appear next to each other rather than as a list and added space in between them*/
 #skills ul {
-  position: relative;
-  top: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -162,19 +166,13 @@ a:visited {
   margin: 0.5rem;
 }
 
-.contact {
-  position: relative;
-  top: 3rem;
+#skills p {
+  font-style: italic;
 }
 
 .contact img {
   width: 50%;
   height: auto;
-}
-
-footer {
-  position: relative;
-  top: 4rem;
 }
 
 form {
@@ -187,4 +185,12 @@ form {
 /*Placed the contact us form in a table so that it's easier to line up*/
 table {
   margin: 0 auto;
+}
+
+/*Added a media query to stop the image from squishing once it gets small*/
+@media only screen and (max-width: 900px){
+  .website-creator-image {
+   display: inline-block;
+   width: 100%;
+  }
 }

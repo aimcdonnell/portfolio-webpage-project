@@ -1,7 +1,7 @@
 # Portfolio Webpage Project
 
 ## Description
-I created a webpage to showcase different projects. The website includes different pages and a separate "Contact Form" page.
+An assignment practising creating a portfolio webpage that showcases all portfolio projects. The website includes different pages and a separate "Contact Form" page.
 
 ## Features
 + A Contact Us form
@@ -12,9 +12,9 @@ I created a webpage to showcase different projects. The website includes differe
 Simply click on each page in the navigation bar to navigate around the pages.
 
 ## Technologies
-Visual Studio Code - the command line used to create the code
-HTML - providing the framework of the page
-CSS - used to style the pages
-JavaScript - the program
-Git - manages the source code
-GitHub - hosts and stores the Git repository
+- Visual Studio Code - the command line used to create the code
+- HTML - providing the framework of the page
+- CSS - used to style the pages
+- JavaScript - the program
+- Git - manages the source code
+- GitHub - hosts and stores the Git repository
